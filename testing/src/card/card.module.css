@@ -1,0 +1,14 @@
+.card{
+    background-color: rgb(243, 243, 213);
+    width: 20%;
+    border-radius: 5%;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.card img{
+    width: 95%;
+    text-align: center;
+}
