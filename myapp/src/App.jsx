@@ -1,18 +1,11 @@
-import Button from './Button'
-import Contact from './contact';
-import Home from './home';
-import About from './About';
-let name="Daran"
-let age=23
+import Student from "./Student";
 
 
 function App()
 {
   return(
     <div>
-      <Home/>
-      <Contact/>
-      <About/>
+      <Student name="Itachi" age={21} isStudent={true}/>
     </div>
   );
 }
