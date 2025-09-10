@@ -1,6 +1,5 @@
 import Student from "./Student";
 import Stud from "./Stud";
-
 function App()
 {
   return(
