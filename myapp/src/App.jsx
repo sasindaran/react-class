@@ -7,7 +7,7 @@ function App()
       <Student name="Itachi" age={21} isStudent={true}/>
       <Student name="Naruto" age={21} isStudent={true}/>
       <Student name="Jiraiya" age={21} isStudent={true}/>
-      <Student name="Minato" age={21} isStudent={true}/>
+      <Student name="Minato" age={21} isStudent={false}/>
       {/* <Stud name="Itachi" age={21} isStudent={true}/> */}
     </div>
   );
