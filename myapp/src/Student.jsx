@@ -10,4 +10,10 @@ export default function Student(info)
         </div>
     )
 }
+else
+{
+    return(
+        <h1>Page not Found</h1>
+    )
+}
 }
