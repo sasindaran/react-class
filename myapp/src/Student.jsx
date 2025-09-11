@@ -1,19 +1,7 @@
 export default function Student(info)
 {
-    if(info.isStudent)
-    {
     return(
-        <div class="bord">
-            <p>Name: {info.name}</p>
-            <p>Age: {info.age}</p>
-            {/* <p>Student: {info.isStudent ? "Yes":"no"}</p> */}
-        </div>
+
+        info.isStudent?<h1>Welcome  to Skyllx {info.name}</h1>: <h1>User not Found</h1>
     )
-}
-else
-{
-    return(
-        <h1>Page not Found</h1>
-    )
-}
 }
