@@ -9,8 +9,9 @@ export default function Student(info)
         <h1 className="no-login">User not Found</h1>
     )
 }
-Student.propTypes = {
-  name: PropTypes.string.isRequired,   // must be a string
-  age: PropTypes.number.isRequired,    // must be a number
-  isStudent: PropTypes.bool.isRequired // must be true/false
-};
+
+// Student.propTypes = {
+//   name: PropTypes.string.isRequired,   // must be a string
+//   age: PropTypes.number.isRequired,    // must be a number
+//   isStudent: PropTypes.bool.isRequired // must be true/false
+// };
