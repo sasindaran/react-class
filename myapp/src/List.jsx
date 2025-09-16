@@ -2,12 +2,18 @@
 
 export default function List() {
 
-    const num=["one","two","three"]
-    const listItems=num.map((no,ind)=>{
-        return <li key={ind}>{no}</li>
-    });
-    return (
-        <ul>{listItems}
-        </ul>
-  )
+   const fruits=[{id: 1,name:"Apple",calories:90},
+                 {id: 2,name:"Orange",calories:80},
+                 {id: 3,name:"Banana",calories:50},
+                 {id: 4,name:"Cocount",calories:43},
+                 {id: 5,name:"Pineaaple",calories:25},
+   ]
+
+   fruits.sort()
+
+   const listItem=fruits.map(fruits=> <li key={fruits.id}>{fruits.name}:&nbsp;<b>{fruits.calories}</b></li>);
+
+   return(
+    <ol>{listItem}</ol>
+   )
 }
