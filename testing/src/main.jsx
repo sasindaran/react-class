@@ -7,11 +7,11 @@ import html from './card/image/html.png'
 import css from './card/image/css.png'
 
 
+
 createRoot(document.getElementById('root')).render(
   <>
-    
-    <Card name="HTML" cost={true} image={html} con={true}/>
-    <Card image={css}/>
+  <App/>
+
     
  
   </>

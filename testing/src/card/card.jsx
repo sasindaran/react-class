@@ -1,24 +1,39 @@
+import { useState } from 'react';
 import Course from '../courses/course';
 import card from './card.module.css'
 import PropTypes from 'prop-types'
-const style={
-    
-    textAlign:'center',
-}
+function Card(info){
 
-function Card({name="Hello",cost="$300",image="",con=false}){
-    if(con)
+
+    const style={
+        
+        textAlign:'center',
+    }
+    
+    const [real,mod_method]=useState(info.cost)
+    const [dis,rem]=useState(true);
+    function remove()
+    {
+        rem(false)
+    }
+    function discount()
+    {
+        mod_method(real-200);
+    }
+    if(info.con)
     {
     return(
-        <>
-        <div className={card.card} style={style}>
-            <img src={image} alt="" />
+        dis && <>
+         <div className={card.card} style={style}>
+            <img src={info.image} alt="" />
             <br />
             <h1 >
-            {name} <br />
+            {info.name} <br />
             </h1>
             <br />
-            Course cost :{cost}
+            Course cost :{real}
+            <button onClick={discount}>Discount</button>
+            <button onClick={remove}>Delete</button>
         </div>
         </>
     );
