@@ -1,6 +1,13 @@
 function Button(){
+
+    function print_elevent(e){
+        e.target.textContent="chinda baku dam dam";
+        setTimeout(()=>e.target.textContent="",1500);
+        
+    }
+
     return(
-        <button>Click me</button>
+        <button onDoubleClick={(event)=>print_elevent(event)}>Click me</button>
     );
 }
 

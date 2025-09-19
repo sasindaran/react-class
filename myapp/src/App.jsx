@@ -2,7 +2,7 @@ import Student from "./Student";
 import Stud from "./Stud";
 import PropTypes from "prop-types";
 import List from './List'
-
+import Button from './Button';
 function App()
 {
 let  arr=["Naruto","Itachi","Jiraiya"]
@@ -16,7 +16,7 @@ let  arr=["Naruto","Itachi","Jiraiya"]
 
   return(
     <div>
-      <List/>
+      <Button></Button>
     </div>
   );
 }
