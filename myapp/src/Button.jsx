@@ -1,13 +1,23 @@
+import { useState } from "react";
 function Button(){
-
-    function print_elevent(e){
-        e.target.textContent="chinda baku dam dam";
-        setTimeout(()=>e.target.textContent="",1500);
-        
-    }
-
+    
+const [name, setName] = useState("Nothing to show")
+const [age, setage] = useState("Not mentioned")
+function updateName(){
+    let getname=prompt("Enter your name")
+    let getage=prompt("Enter your Age");
+   setName(getname);
+   setage(getage);
+}
     return(
-        <button onDoubleClick={(event)=>print_elevent(event)}>Click me</button>
+        <div>
+            <p>
+                Name:{name}
+                <br />
+                Age:{age}
+            </p>
+        <button onClick={updateName}>Click me</button>
+        </div>
     );
 }
 
