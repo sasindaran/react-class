@@ -3,6 +3,7 @@ import Stud from "./Stud";
 import PropTypes from "prop-types";
 import List from './List'
 import Button from './Button';
+import ThreeButton from "./ThreeButton";
 function App()
 {
 let  arr=["Naruto","Itachi","Jiraiya"]
@@ -16,7 +17,7 @@ let  arr=["Naruto","Itachi","Jiraiya"]
 
   return(
     <div>
-      <Button></Button>
+      <ThreeButton/>
     </div>
   );
 }
