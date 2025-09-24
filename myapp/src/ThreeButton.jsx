@@ -18,12 +18,12 @@ export default function ThreeButton() {
         }
     return (
 
-    <div>
+    <div style={{marginTop:300,marginLeft:400}}>
         <p>{count}</p>
         
-        <button onClick={decrement} id="red">Decrement</button>
-        <button onClick={reset}>Reset</button>
-        <button onClick={increment}>Increment</button>
+        <button onClick={decrement} className="btn" id="red">Decrement</button>
+        <button onClick={reset} className="btn">Reset</button>
+        <button onClick={increment} className="btn" id="green">Increment</button>
     </div>
   )
 }

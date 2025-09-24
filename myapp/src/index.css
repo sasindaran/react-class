@@ -28,3 +28,25 @@
 #green{
   background-color: green;
 }
+
+#reset{
+  background-color: aqua;
+}
+
+.btn{
+  width: 100px;
+  height:20px;
+  border-radius: 10px;
+}
+
+body{
+  background-color: #222;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+
+.form-div input{
+  
+  height: 200%;
+}
