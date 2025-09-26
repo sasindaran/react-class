@@ -4,7 +4,9 @@
 // import List from './List'
 // import Button from './Button';
 // import ThreeButton from "./ThreeButton";
-import Form from "./form";
+// import Form from "./form";
+
+import ColorPicker from "./ColorPicker";
 function App()
 {
 let  arr=["Naruto","Itachi","Jiraiya"]
@@ -18,7 +20,7 @@ let  arr=["Naruto","Itachi","Jiraiya"]
 
   return(
     <div>
-      <Form/>
+    <ColorPicker/>
     </div>
   );
 }
