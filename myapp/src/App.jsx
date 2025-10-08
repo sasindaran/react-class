@@ -6,21 +6,15 @@
 // import ThreeButton from "./ThreeButton";
 // import Form from "./form";
 
-import ColorPicker from "./ColorPicker";
+import Car_Component from "./Car_Component";
+
 function App()
 {
-let  arr=["Naruto","Itachi","Jiraiya"]
 
-// let list1=[];
-
-// for(let i=0;i<arr.length;i++)
-// {
-//   list1.push(<Student name={arr[i]} age={0} isStudent={true}></Student>)
-// }
 
   return(
     <div>
-    <ColorPicker/>
+    <Car_Component/>
     </div>
   );
 }
