@@ -4,9 +4,10 @@ export default function Car_Component() {
     const [car, setcar] = useState(["Hyundai","Ford","ShelbyFord","Mahindra"])
     const [inputValue, setinputValue] = useState("")
 
-    function handleremove()
+    function handleremove(carToremove)
     {
-
+        const filterList=car.filter((item,idx)=>item !==carToremove)
+        setcar(filterList)
     }
 
     const handleOnChange = (e) => {
@@ -14,7 +15,7 @@ export default function Car_Component() {
     }
     function handleAddCar()
     {
-        setinputValue(document.getElementById("carInput").Value);
+        // setinputValue(document.getElementById("carInput").Value);
         setcar(prev=>[...prev,inputValue])
     }
     
